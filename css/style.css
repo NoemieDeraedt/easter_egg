@@ -1,0 +1,34 @@
+/*
+ * Made by Noémie Deraedt in 2019.
+ */
+
+body {
+    overflow: hidden;
+    resize: both;
+    height: 100%;
+    width: 100%;
+    background-color: #1F1F1F;
+}
+
+#room {
+    height: auto;
+    width: 100%;
+    position: absolute;
+}
+
+#container {
+    width: 95%;
+    height: 95%;
+    position: relative;
+}
+
+#character {
+    background-image: url("../assets/Personnage.png");
+    background-position-x: 0;
+    background-position-y: 0;
+    width: 35px;
+    height: 30px;
+    margin-top: 33%;
+    margin-left: 15%;
+    position: absolute;
+}
