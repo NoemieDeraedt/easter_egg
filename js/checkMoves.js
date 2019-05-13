@@ -46,6 +46,3 @@ function checkMoveRight(posx, posy) {
     else
         return 0;
 }
-
-// BIBLIOTHEQUES
-// EASTER EGG QUAND UN CERTAIN CODE EST FAIT AVEC LES SYMBOLES AVEC TIMER

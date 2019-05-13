@@ -19,7 +19,6 @@ function moveChar(event) {
     let key = event.which || event.keyCode;
     const character = document.getElementById("character");
 
-//    console.log(key);
     if (key === 38 || key === 90)
         moveUp(character);
     else if (key === 37 || key === 81)
@@ -32,7 +31,6 @@ function moveChar(event) {
         checkInteraction(posx, posy);
     else if (key === 27)
         closeBooks();
-    checkCodes(key);
 }
 
 
@@ -42,7 +40,6 @@ function moveDown(character) {
         posy += 1;
         character.style.marginTop = posy + '%';
     }
-    console.log("posx = " + posx, "posy = " + posy);
 }
 
 
@@ -52,7 +49,6 @@ function moveUp(character) {
         posy -= 1;
         character.style.marginTop = posy + '%';
     }
-    console.log("posx = " + posx, "posy = " + posy);
 }
 
 
@@ -62,7 +58,6 @@ function moveLeft(character) {
         posx -= 1;
         character.style.marginLeft = posx + '%';
     }
-    console.log("posx = " + posx, "posy = " + posy);
 }
 
 
@@ -72,7 +67,6 @@ function moveRight(character) {
         posx += 1;
         character.style.marginLeft = posx + '%';
     }
-    console.log("posx = " + posx, "posy = " + posy);
 }
 
 
