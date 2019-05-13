@@ -1,0 +1,24 @@
+/*
+ * Made by Noémie Deraedt in 2019.
+ */
+
+#poulet {
+    opacity: 0.0;
+    margin-left: 56%;
+    margin-top: 30%;
+    position: absolute;
+}
+
+#poulet-or {
+    opacity: 0.0;
+    margin-left: 56%;
+    margin-top: 30%;
+    position: absolute;
+}
+
+#chumtoad {
+    opacity: 0.0;
+    margin-left: 85%;
+    margin-top: 24%;
+    position: absolute;
+}
