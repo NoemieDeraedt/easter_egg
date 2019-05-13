@@ -80,12 +80,14 @@ function checkInteraction(posx, posy) {
         || (posx === 74 && posy === 22))
         document.getElementById("e").style.opacity = 1.0;
 
-    if (((posx === 20 && posy === 30) || (posx === 21 && posy === 30) || (posx === 22 && posy === 30)) && livre5 === 0)
+    if (posy === 30 && (posx === 20 || posx === 21 || posx === 22) && livre5 === 0)
         livre5++;
-    else if (((posx === 24 && posy === 30) || (posx === 25 && posy === 30)) && livre5 === 1)
+    else if (posy === 30 && (posx === 24 || posx === 25) && livre5 === 1)
         livre5++;
-    else if (((posx === 31 && posy === 30) || (posx === 30 && posy === 30) || (posx === 32 && posy === 30)) && livre5 === 2)
+    else if (posy === 30 && (posx === 31 || posx === 30 || posx === 32) && livre5 === 2)
         livre5++;
+    else
+        livre5 = 0;
     if (livre5 === 3) {
         document.getElementById("book5").style.opacity = 1.0;
         alert("Il semblerait qu'un livre soit apparu...");
