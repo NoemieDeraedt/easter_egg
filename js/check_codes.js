@@ -91,5 +91,4 @@ function checkInteraction(posx, posy) {
         alert("Il semblerait qu'un livre soit apparu...");
         livre5 = 0;
     }
-    console.log(livre5);
 }
