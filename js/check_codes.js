@@ -135,4 +135,8 @@ function checkInteraction(posx, posy) {
         document.getElementById("poulet").style.opacity = 0.0;
         document.getElementById("poulet-or").style.opacity = 1.0;
     }
+
+    if ((posx === 84 && posy === 24) || (posx === 85 && posy === 24) || (posx === 85 && posy === 25)
+        || (posx === 85 && posy === 23) || (posx === 86 && posy === 24))
+        alert("Grrrrrrrrr");
 }
