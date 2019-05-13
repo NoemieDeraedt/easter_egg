@@ -6,4 +6,4 @@ Utilisation:
 - Pour sortir de l'affichage d'un livre, utilisez la touche Echap de votre clavier.
 
 Code: Noémie Deraedt
-Graphismes (sauf personnage): Thomas Morel
+Graphismes: Thomas Morel
