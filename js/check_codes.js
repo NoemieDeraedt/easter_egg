@@ -78,7 +78,7 @@ function checkInteraction(posx, posy) {
         document.getElementById("d").style.opacity = 1.0;
     if ((posx === 74 && posy === 23) || (posx === 75 && posy === 23) || (posx === 74 && posy === 24)
         || (posx === 74 && posy === 22))
-        document.getElementById("e").style.opacity = 1.0;
+        document.getElementById("f").style.opacity = 1.0;
 
     if (posy === 30 && (posx === 20 || posx === 21 || posx === 22) && livre5 === 0)
         livre5++;
