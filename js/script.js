@@ -31,6 +31,7 @@ function moveChar(event) {
         checkInteraction(posx, posy);
     else if (key === 27)
         closeBooks();
+    checkCodes(key);
 }
 
 
