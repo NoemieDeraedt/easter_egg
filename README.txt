@@ -5,5 +5,9 @@ Utilisation:
 - Pour intéragir avec les livres, utilisez la touche E.
 - Pour sortir de l'affichage d'un livre, utilisez la touche Echap de votre clavier.
 
-Code: Noémie Deraedt
+Note: Il existe deux Easter Eggs dans le jeu: l'un déblocable en tapant la date du premier Easter Egg et l'autre avec le code de désamorçage du jeu Counter Strike: Global Offensive.
+
+Note 2: Le livre solution (à utiliser en cas de blocage) est situé en dessous du premier logo situé sur le mur.
+
 Graphismes: Thomas Morel
+Code: Noémie Deraedt
