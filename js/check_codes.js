@@ -27,13 +27,13 @@ function checkCodes(key) {
         livre4 = 0;
     }
 
-    if (key === 38 && (livre3 === 0 || livre3 === 1))
+    if ((key === 38 || key === 90) && (livre3 === 0 || livre3 === 1))
         livre3++;
-    else if (key === 40 && (livre3 === 2 || livre3 === 3))
+    else if ((key === 40 || key === 83) && (livre3 === 2 || livre3 === 3))
         livre3++;
-    else if (key === 37 && (livre3 === 4 || livre3 === 6))
+    else if ((key === 37 || key === 81) && (livre3 === 4 || livre3 === 6))
         livre3++;
-    else if (key === 39 && (livre3 === 5 || livre3 === 7))
+    else if ((key === 39 || key === 68) && (livre3 === 5 || livre3 === 7))
         livre3++;
     else if (key === 66 && livre3 === 8)
         livre3++;
