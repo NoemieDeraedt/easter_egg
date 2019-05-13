@@ -7,6 +7,8 @@ var livre3 = 0;
 var livre5 = 0;
 var poulet = 0;
 var date = 0;
+var state_poulet = 0;   // 0 = white
+                        // 1 = gold
 
 function checkCodes(key) {
     if ((key === 49 || key === 97) && livre4 === 0)
@@ -130,10 +132,18 @@ function checkInteraction(posx, posy) {
         livre5 = 0;
     }
 
-    if ((posx === 56 && posy === 30) || (posx === 55 && posy === 30) || (posx === 57 && posy === 30)
-        || (posx === 56 && posy === 31)) {
+    if (((posx === 56 && posy === 30) || (posx === 55 && posy === 30) || (posx === 57 && posy === 30)
+        || (posx === 56 && posy === 31)) && state_poulet === 0) {
+        alert("Cot cot...");
         document.getElementById("poulet").style.opacity = 0.0;
         document.getElementById("poulet-or").style.opacity = 1.0;
+        state_poulet = 1;
+    } else if (((posx === 56 && posy === 30) || (posx === 55 && posy === 30) || (posx === 57 && posy === 30)
+        || (posx === 56 && posy === 31)) && state_poulet === 1) {
+        alert("Cot cot...");
+        document.getElementById("poulet").style.opacity = 1.0;
+        document.getElementById("poulet-or").style.opacity = 0.0;
+        state_poulet = 0;
     }
 
     if ((posx === 84 && posy === 24) || (posx === 85 && posy === 24) || (posx === 85 && posy === 25)
