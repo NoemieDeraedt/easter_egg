@@ -5,6 +5,7 @@
 var livre4 = 0;
 var livre3 = 0;
 var livre5 = 0;
+var poulet = 0;
 
 function checkCodes(key) {
     if (key === 49 && livre4 === 0)
@@ -43,6 +44,26 @@ function checkCodes(key) {
         document.getElementById("book3").style.opacity = 1.0;
         alert("Il semblerait qu'un livre soit apparu...");
         livre3 = 0;
+    }
+
+    if (key === 55 && poulet === 0)
+        poulet++;
+    else if (key === 51 && poulet === 1)
+        poulet++;
+    else if (key === 53 && (poulet === 2 || poulet === 3))
+        poulet++;
+    else if (key === 54 && poulet === 4)
+        poulet++;
+    else if (key === 48 && poulet === 5)
+        poulet++;
+    else if (key === 56 && poulet === 6)
+        poulet++;
+    else
+        poulet = 0;
+    if (poulet === 7) {
+        document.getElementById("poulet").style.opacity = 1.0;
+        alert("Un poulet est entré dans la bibliothèque ! Heureusement qu’il ne crache pas de flammes...");
+        poulet = 0;
     }
 }
 
@@ -92,5 +113,11 @@ function checkInteraction(posx, posy) {
         document.getElementById("book5").style.opacity = 1.0;
         alert("Il semblerait qu'un livre soit apparu...");
         livre5 = 0;
+    }
+
+    if ((posx === 56 && posy === 30) || (posx === 55 && posy === 30) || (posx === 57 && posy === 30)
+        || (posx === 56 && posy === 31)) {
+        document.getElementById("poulet").style.opacity = 0.0;
+        document.getElementById("poulet-or").style.opacity = 1.0;
     }
 }
