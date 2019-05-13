@@ -6,6 +6,7 @@ var livre4 = 0;
 var livre3 = 0;
 var livre5 = 0;
 var poulet = 0;
+var date = 0;
 
 function checkCodes(key) {
     if (key === 49 && livre4 === 0)
@@ -64,6 +65,20 @@ function checkCodes(key) {
         document.getElementById("poulet").style.opacity = 1.0;
         alert("Un poulet est entré dans la bibliothèque ! Heureusement qu’il ne crache pas de flammes...");
         poulet = 0;
+    }
+
+    if (key === 49 && date === 0)
+        date++;
+    else if (key === 57 && (date === 1 || date === 3))
+        date++;
+    else if (key === 55 && date === 2)
+        date++;
+    else
+        date = 0;
+    if (date === 4) {
+        document.getElementById("chumtoad").style.opacity = 1.0;
+        alert("Un Chumtoad est tombé du plafond !");
+        date = 0;
     }
 }
 
