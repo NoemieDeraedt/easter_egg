@@ -9,7 +9,7 @@ var poulet = 0;
 var date = 0;
 
 function checkCodes(key) {
-    if ((key === 49 || key === 87) && livre4 === 0)
+    if ((key === 49 || key === 97) && livre4 === 0)
         livre4++;
     else if ((key === 57 || key === 105) && (livre4 === 1 || livre4 === 2 || livre4 === 3))
         livre4++;
