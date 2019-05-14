@@ -49,17 +49,17 @@ function checkCodes(key) {
         livre3 = 0;
     }
 
-    if (key === 55 && poulet === 0)
+    if ((key === 55 || key === 103) && poulet === 0)
         poulet++;
-    else if (key === 51 && poulet === 1)
+    else if ((key === 51 || key === 99) && poulet === 1)
         poulet++;
-    else if (key === 53 && (poulet === 2 || poulet === 3))
+    else if ((key === 53 || key === 101) && (poulet === 2 || poulet === 3))
         poulet++;
-    else if (key === 54 && poulet === 4)
+    else if ((key === 54 || key === 102) && poulet === 4)
         poulet++;
-    else if (key === 48 && poulet === 5)
+    else if ((key === 48 || key === 96) && poulet === 5)
         poulet++;
-    else if (key === 56 && poulet === 6)
+    else if ((key === 56 || key === 104) && poulet === 6)
         poulet++;
     else
         poulet = 0;
@@ -69,11 +69,11 @@ function checkCodes(key) {
         poulet = 0;
     }
 
-    if (key === 49 && date === 0)
+    if ((key === 49 || key === 97) && date === 0)
         date++;
-    else if (key === 57 && (date === 1 || date === 3))
+    else if ((key === 57 || key === 105) && (date === 1 || date === 3))
         date++;
-    else if (key === 55 && date === 2)
+    else if ((key === 55 || key === 103) && date === 2)
         date++;
     else
         date = 0;
